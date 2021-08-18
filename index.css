@@ -1,0 +1,67 @@
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 45px;
+  text-align: center;
+}
+p {
+  color: white;
+  text-align: center;
+}
+.qustion {
+  font-weight: 600;
+  font-size: 45px;
+  margin-bottom: 45px;
+  border-style: hidden;
+  padding: 15px;
+}
+button {
+  color: black;
+  border-style: hidden;
+  font-weight: 500;
+  font-size: 24px;
+}
+#answer {
+  font-weight: bold;
+  font-size: 24px;
+  border-bottom: 40px;
+}
+#showAnswer {
+  padding: 15px;
+  border-radius: 20px;
+  width: 50%;
+  background-color: #93f542;
+}
+#next {
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 45px;
+  margin-left: auto;
+  background-color: white;
+}
+.questionNumber {
+  margin-left: auto;
+  font-size: 25px;
+}
+.card {
+  padding: 40px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #4d4d4d;
+  width: 80%;
+}

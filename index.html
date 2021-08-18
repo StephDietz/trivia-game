@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>trivia</title>
+  </head>
+
+  <body>
+    <link rel="stylesheet" href="index.css">
+
+    <script>
+    var questionNumber = 0;
+    var questions = [
+      {question: 'What does www stand for in a website browser?', answer: 'World Wide Web'},
+      {question: 'How long is an Olympic swimming pool (in meters)?', answer: '50 meters'},
+      {question: 'What is "cynophobia"?', answer: 'Fear of dogs'},
+      {question: 'How many languages are written from right to left?', answer: '12'},
+      {question: 'Who was the first woman to win a Nobel Prize (in 1903)?', answer: 'Marie Curie'}
+
+    ]
+
+    function next() {
+      questionNumber += 1;
+      document.getElementById("question").innerHTML = questions[questionNumber].question;
+      document.getElementById("answer").innerHTML = '';
+      document.getElementById("questionNumber").innerHTML = questionNumber+1;
+
+    };
+    function showAnswer() {
+      document.getElementById("answer").innerHTML = questions[questionNumber].answer;
+    };
+    </script>
+
+    <div class="container">
+      <div class="card">
+        <p class="questionNumber"><a id="questionNumber">1</a>/5</p>
+        <h1 id="question">What does www stand for in a website browser?</h1>
+        <p id="answer"></p>
+        <button id="showAnswer" onclick="showAnswer()">Show Answer</button>
+        <button id="next" onclick="next()">Next</button>
+      </div>
+    </div>
+  </body>
+
+</html>
